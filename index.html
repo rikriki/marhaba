@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marhaba</title>
+    <meta name="description" content="Marhaba Interactgive presentation" />
+    <meta name="author" content="Emirates Group" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/demo.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/minimal.min.css" />
+
+    <link rel="stylesheet" href="assets/css/angular-material.min.css">
+    <link href="assets/css/angular-carousel.min.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body ng-app="MARHABA-APP" ng-controller="MainCtrl">
+
+<div id="logo" ng-class="{'alternateLogo':navActivated==true, 'hidden':intro==true}"/></div>
+<div id="perspective" class="perspective effect-airbnb" >
+    <div class="container">
+        <button id="showMenu" ng-click="toggleNav()" ng-class="{ 'hidden':intro==true}">
+            <span></span>
+        </button>
+        <div id="smallLogo"/></div>
+    <div class="wrapper">
+        <div data-ng-view="" class="ngViewed " id="ngViewed" >
+            <!-- main content start here -->
+        </div>
+
+
+    </div><!-- wrapper -->
+</div><!-- /container -->
+<div data-ng-include="LeftBarSrc"></div>
+
+</div><!-- /perspective -->
+<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load -->
+<script src="assets/js/modernizr.custom.25376.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-aria.min.js"></script>
+<script src="assets/js/angular-animate.min.js"></script>
+<script src="assets/js/angular-material.min.js"></script>
+<script src="assets/js/angular-carousel.min.js"></script>
+
+<script src="assets/bower_components/angular/angular-resource.min.js"></script>
+<script src="assets/bower_components/angular/angular-route.min.js"></script>
+<script src="assets/bower_components/angular/angular-touch.min.js"></script>
+
+<script type="text/javascript" src="app.controller.js"></script>
+<script type="text/javascript" src="app.core.js"></script>
+<script type="text/javascript" src="app.router.js"></script>
+
+<!----SECTIONS------>
+<script src="sections/intro/intro.ctrl.js"></script>
+<script src="sections/00/00.ctrl.js"></script>
+<script src="sections/01/01.ctrl.js"></script>
+<script src="sections/02/02.ctrl.js"></script>
+<script src="sections/03/03.ctrl.js"></script>
+<script src="sections/04/04.ctrl.js"></script>
+<script src="sections/05/05.ctrl.js"></script>
+<script src="sections/06/06.ctrl.js"></script>
+<script src="sections/07/07.ctrl.js"></script>
+<script src="sections/08/08.ctrl.js"></script>
+
+<!----SECTIONS------>
+</body>
+</html>

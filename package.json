@@ -1,0 +1,20 @@
+{
+  "name": "node-sample",
+  "description": "Our sample Node to Heroku app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~3.4.6",
+    "socket.io": "~0.9.16",
+    "ejs": "~0.8.5",
+    "express-device": "~0.3.7",
+    "method-override":"latest",
+    "body-parser":"latest",
+    "morgan":"latest",
+    "serve-favicon":"latest",
+    "pg": "4.x"
+  }
+}
+
